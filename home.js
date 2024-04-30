@@ -5,7 +5,7 @@ const button = document.getElementById('send-question')
 
 const consultaGemini = (question) => {
 
-    const keyGoogle = 'AIzaSyBZaybh57iVi23jcLvzuIrabNG4f3td60A'
+    // keyGoogle = 'AIzaSyBZaybh57iVi23jcLvzuIrabNG4f3td60A'
 
     const url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=' + keyGoogle;
 
@@ -57,7 +57,7 @@ button.addEventListener('click', () => {
 
 async function traduzir (text) {
 
-    let key = '89f9f593ce824acdbcf6271b2a7a8a52'
+    //let key = '89f9f593ce824acdbcf6271b2a7a8a52'
 
     let endpoint = `https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&from=pt&to=en`
         const options = {

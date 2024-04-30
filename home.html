@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./home.js" defer></script>
     <link rel="stylesheet" href="./home.css">
     <title>Zen-ai</title>
 </head>
@@ -14,11 +15,35 @@
     </header>
 
     <main>
+        
         <img src="./img/mewo.gif" alt="">
+
+        <div>
+            <textarea id="answer-pt" ></textarea>
+            <textarea class="hidden" id="answer-en" ></textarea>
+        </div>
     </main>
 
     <footer>
-        <input type="text" placeholder="Esperando algo acontecer?">
+
+        <div class="user">
+
+            <div class="buttons">
+                <button id="button-pt">PORTUGUESE</button>
+                <button id="button-en">ENGLISH</button>
+            </div>
+
+            <img src="./img/character.png" alt="">
+        </div>
+        
+
+        <div class="input">
+
+            <textarea id="ask-user" ></textarea>
+            <img id="send-question" src="./img/enviar.png" alt="">
+
+        </div>
+
     </footer>
 </body>
 </html>

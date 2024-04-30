@@ -1,4 +1,4 @@
-*{
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,29 +15,48 @@ header{
     align-items: center;
     width: 100vw;
     padding-left: 20px;
+    height: 14vh;
 }
 
 h1{
     font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 main{
-    width: 100vw;
-    height: 70vh;
     display: grid;
     justify-content: center;
+    justify-items: center;
+    height: 48vh;
+    width: 100vw;
 }
 
 main img{
-    height: 40%;
+    height: 20vh;
+}
+
+main textarea{
+    height: 45vh;
+    width: 35vw;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: solid white 2px;
+    box-shadow: 0px 0px 0px 2px black;
+    font-size: 18px;
+    padding-left: 8px;
+    outline-style: none;
+    border-radius: 10px;
 }
 
 footer{
     display: grid;
     place-content: center;
+    gap: 12px;
 }
 
-input{
+.input{
+    display: flex;
     height: 80px;
     width: 70vw;
     background-color: black;
@@ -48,4 +67,55 @@ input{
     padding-left: 8px;
     outline-style: none;
     border-radius: 10px;
+    align-items: center;
+}
+
+.input img{
+    height: 4vh;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+textarea{
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+    text-decoration: none;
+    outline: none;
+    resize: none;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.hidden{
+    display: none;
+}
+
+.user{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+
+button{
+    height: 6vh;
+    width: 8vw;
+    background-color: black;
+    color: white;
+    border: solid white 2px;
+    box-shadow: 0px 0px 0px 2px black;
+    font-size: 18px;
+    padding-left: 8px;
+    outline-style: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
